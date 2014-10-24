@@ -1,0 +1,55 @@
+package pl.javastart.first;
+import static java.lang.Math.*;
+
+public class HelloZmienne {
+
+	public static void main(String[] args) {
+		
+	System.out.println("Wyswietli ten napis");
+	
+	String tekst="Teeekst";
+	String tekst2="Tekst";
+	String male="cos ";
+	String duze="COS";
+	
+	int zmienna=5;
+	int zmienna1=2;
+	double zmienna2=3.2;
+	double zmienna3=5.1;
+	double roznica=zmienna3-zmienna2;
+	
+	//double a=1.1111111;
+	//int a=(int).round(a);  BLAD ???????????????????????????????
+	
+	long b=round(9.9999);
+	System.out.println(b);
+	
+	/*double x=9.9999;
+	int x=(int) x; */   //RZUTOWANIE ?????????????????????????
+	
+	final int LICZBA=31;
+	
+	boolean porownanie=tekst.equals(tekst2);
+	boolean duzeMale=male.equalsIgnoreCase(duze);
+	
+	String laczenie=male+duze;
+	System.out.printf(laczenie);   
+	System.out.println();  //KOLEJNE W NOWEJ LINII
+	
+	String zmiana=tekst.substring(0,2)+"raz wycinam i lacze"; //przecinek, od 0 do 1!
+	System.out.printf(zmiana); //zmienia wyraz
+	System.out.println(); //KOLEJNE W NOWEJ LINII
+	
+	System.out.println(tekst);
+	System.out.println("zmienna+zmienna1= "+(zmienna+zmienna1));
+	System.out.println("zmienna3-zmienna2= "+roznica);       // ???????????????????????????
+    System.out.println(porownanie); //false, bo nie sa takie same
+    System.out.println(duzeMale); //true, litery moga byc roznej wielkosci
+	System.out.println(1+2);
+	System.out.println(LICZBA);
+	
+	
+	
+	}
+
+}
