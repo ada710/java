@@ -1,0 +1,15 @@
+package helloAda;
+import java.util.Scanner; //wczytuje dane 
+
+public class helloAda {
+
+	public static void main(String[] args) {
+	 String imie;
+	 Scanner odczyt=new Scanner(System.in);
+	 System.out.println("podaj imie");
+	 imie=odczyt.nextLine();
+	 System.out.println("Witaj "+imie);
+     odczyt.close();
+	}
+
+}
